@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.internalblockdiagram"
+		name="Internal Block Diagram"
+		description="Create Internal Block Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.internalblockdiagram.InternalBlockDiagramPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.internalblockdiagram.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.internalblockdiagram.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.internalblockdiagram.actionset1.InternalBlockDiagramAction"
+					actionType="generalAction"
+      		name="Internal Block Diagram"
+		      description="Create Internal Block Diagram"
+					style="normal"
+          icon="icon/icon.png"
+          tooltip="Create Internal Block Diagram"
+					toolbarPath="com.vp.plugin.sample.internalblockdiagram.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.internalblockdiagram.actions.InternalBlockDiagramActionControl"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
